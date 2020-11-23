@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import image from './picture.png';
 import './App.css';
 
-function App() {
+declare module '*.png'
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-page">
+      <h1 className="main-header">First React Application</h1>
+      <img src={image} alt="" className="main-image" />
     </div>
   );
 }
